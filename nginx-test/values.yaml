@@ -36,6 +36,7 @@ service:
 
 env: 
   DB_ADDRESS: postgres-master
+  DB_TEST: "1234"
 ingress:
   enabled: true
   annotations: {}
