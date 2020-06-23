@@ -42,7 +42,7 @@ ingress:
   hosts:
     - host: test.sevensystem.vn
       paths: /
-  tls: []
+  tls:
     - secretName: sevensystemvn
       hosts:
         - test.sevensystem.vn
