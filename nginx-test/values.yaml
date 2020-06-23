@@ -34,9 +34,6 @@ service:
   type: ClusterIP
   port: 80
 
-env: 
-  DB_ADDRESS: postgres-master
-  DB_TEST: "1234"
 ingress:
   enabled: true
   annotations: {}
