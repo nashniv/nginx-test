@@ -34,6 +34,8 @@ service:
   type: ClusterIP
   port: 80
 
+env: 
+  DB_ADDRESS: postgres-master
 ingress:
   enabled: true
   annotations: {}
@@ -43,9 +45,9 @@ ingress:
     - host: test.sevensystem.vn
       paths: /
   tls: []
-  #  - secretName: chart-example-tls
-  #    hosts:
-  #      - chart-example.local
+    - secretName: sevensystemvn
+      hosts:
+        - test.sevensystem.vn
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
