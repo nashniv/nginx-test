@@ -41,7 +41,7 @@ ingress:
     # kubernetes.io/tls-acme: "true"
   hosts:
     - host: test.sevensystem.vn
-      paths: /
+      paths: [/]
   tls:
     - secretName: sevensystemvn
       hosts:
