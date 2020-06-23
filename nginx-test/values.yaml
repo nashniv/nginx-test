@@ -45,7 +45,7 @@ ingress:
   tls:
     - secretName: sevensystemvn
       hosts:
-        - test.sevensystem.vn
+      - test.sevensystem.vn
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
