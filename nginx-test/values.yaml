@@ -35,17 +35,17 @@ service:
   port: 80
 
 ingress:
-  enabled: false
+  enabled: true
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: test.7now.vn
+    - host: test-argo.sevensystem.vn
       paths: [/]
   tls:
-    - secretName: 7nowvn
+    - secretName: sevensystem-vn
       hosts:
-      - test.7now.vn
+      - test-argo.sevensystem.vn
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
